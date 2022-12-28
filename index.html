@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+            <nav class="header__menu menu">
+                <div class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a data-goto=".main" href="#" class="menu__link">Home!!!</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".work" href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a data-goto=".goods" href="#" class="menu__link">Project</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Price</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="#" class="header__button button">Catalog</a>
+            <button class="burger__menu" type="button">
+                <span></span>
+            </button>
+        </div>
+    </header>
+    <main class="page">
+        <section class="main">
+            <div class="main__container">
+                <h1>Your future<br> is electric</h1>
+                <p>Get your own ebike or emoped with<br> our flexible subscription</p>
+                <a href="#" class="button main__button">Get full catalog</a>
+            </div>
+        </section>
+        <section class="work">
+            <div class="work__container">
+                <div class="work__content">
+                    <h2>How it works</h2>
+                    <ul>
+                        <li>Pick your city</li>
+                        <li>Choose your ride</li>
+                        <li>Delivery to your door</li>
+                        <li>Ride freely</li>
+                    </ul>
+                    <a href="#" class="button work__button">Call me</a>
+                </div>
+                <div class="work__image">
+                    <img src="images/IMAGE.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="goods">
+            <div class="goods__container">
+                <h2 class="goods__title tittle">Our models</h2>
+                <div class="goods__items">
+                    <nav class="goods__items__navigation">
+                        <button data-work-type="" class="goods__item__type button__dark button-dark active">All</button>
+                        <button data-work-type="ui" class="goods__item__type button__dark button-dark">House</button>
+                        <button data-work-type="ux" class="goods__item__type button__dark button-dark">Sauna</button>
+                        <button data-work-type="wd" class="goods__item__type button__dark button-dark">Modular</button>
+                    </nav>
+                    <div class="goods__items__body">
+                        <a data-work-type="ui" href="#" class="goods__items-item">
+                            <div class="goods__item-image">
+                                <img src="images/good1.png" alt="">
+                            </div>
+                        </a>
+                        <a data-work-type="ux" href="#" class="goods__items-item">
+                            <div class="goods__item-image">
+                                <img src="images/good2.png" alt="">
+                            </div>
+                        </a>
+                        <a data-work-type="wd" href="#" class="goods__items-item">
+                            <div class="goods__item-image">
+                                <img src="images/good3.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a data-goto=".main" href="#" class="menu__link">Home</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a data-goto=".work" href="#" class="menu__link">About</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a data-goto=".goods" href="#" class="menu__link">Project</a>
+                </li>
+                <li class="footer-menu__item">
+                    <a href="#" class="menu__link">Price</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
