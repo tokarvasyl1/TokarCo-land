@@ -514,27 +514,41 @@ header {
     .project__item__container {
       display: flex;
       justify-content: space-between;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-      margin-bottom: 30px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+      margin-bottom: 15px;
       gap: 60px;
-      height: 500px;
       padding-left: inherit;
+
       @include max-screen(1250px){
         gap: 30px;
       }
       @include max-screen(1000px){
         gap: 15px;
       }
+      @include max-screen(991.98px){
+        flex-direction: column;
+        padding-left: 15px;
+      }
 
       .project__item-left {
         max-width: 725px;
         overflow: hidden;
+        @include max-screen(991.98px){
+          max-width: 100%;
+          height: 350px;
+        }
+        @include max-screen(600px){
+          height: inherit;
+        }
 
         img {
           display: block;
           width: 100%;
           height: 100%;
           object-fit: cover;
+          @include max-screen(600px){
+            //width: 70%;
+          }
         }
       }
 
@@ -550,6 +564,11 @@ header {
         }
         @include max-screen(1000px){
           padding-right: 0;
+        }
+        @include max-screen(991.98px){
+          width: 80%;
+          margin: auto;
+          border: 1px solid black;
         }
 
         .project__tittle {
@@ -656,7 +675,10 @@ header {
             line-height: 140%;
             color: #333333;
             padding-right: 24px;
-
+            @include max-screen(1080px){
+              font-size: 20px;
+              padding-right: 10px;
+            }
             &::after {
               position: absolute;
               content: "";
@@ -671,10 +693,44 @@ header {
           }
 
           span {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 140%;
+            color: #333333;
             padding-left: 24px;
+            @include max-screen(1080px){
+              font-size: 20px;
+              padding-left: 10px;
+
+            }
           }
         }
 
+      }
+
+    }
+    .project__item__container:nth-child(even){
+      padding-right: inherit;
+      padding-left: 15px;
+      @include max-screen(991.98px){
+        padding: inherit;
+      }
+      &:nth-child(even)>.project__item-left{
+        order: 1;
+        @include max-screen(991.98px){
+          order: inherit;
+        }
+      }
+      &:nth-child(even)>.project__item-right{
+        padding-left: 45px;
+        padding-right: inherit;
+        @include max-screen(1250px){
+          padding-left: 15px;
+        }
+        @include max-screen(991.98px){
+          padding: inherit;
+        }
       }
 
     }
@@ -703,7 +759,7 @@ header {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      width: -100%;
       height: 100%;
       object-fit: contain;
     }

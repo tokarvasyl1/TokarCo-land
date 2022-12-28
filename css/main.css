@@ -494,10 +494,9 @@ header .header__button {
 .projects .projects__items .project__item__container {
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin-bottom: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  margin-bottom: 15px;
   gap: 60px;
-  height: 500px;
   padding-left: inherit;
 }
 @media screen and (max-width: 1250px) {
@@ -510,9 +509,26 @@ header .header__button {
     gap: 15px;
   }
 }
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+}
 .projects .projects__items .project__item__container .project__item-left {
   max-width: 725px;
   overflow: hidden;
+}
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container .project__item-left {
+    max-width: 100%;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects .projects__items .project__item__container .project__item-left {
+    height: inherit;
+  }
 }
 .projects .projects__items .project__item__container .project__item-left img {
   display: block;
@@ -536,6 +552,13 @@ header .header__button {
 @media screen and (max-width: 1000px) {
   .projects .projects__items .project__item__container .project__item-right {
     padding-right: 0;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container .project__item-right {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
   }
 }
 .projects .projects__items .project__item__container .project__item-right .project__tittle {
@@ -637,6 +660,12 @@ header .header__button {
   color: #333333;
   padding-right: 24px;
 }
+@media screen and (max-width: 1080px) {
+  .projects .projects__items .project__item__container .project__item-right .project__price p {
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}
 .projects .projects__items .project__item__container .project__item-right .project__price p::after {
   position: absolute;
   content: "";
@@ -648,7 +677,49 @@ header .header__button {
   top: -4px;
 }
 .projects .projects__items .project__item__container .project__item-right .project__price span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  color: #333333;
   padding-left: 24px;
+}
+@media screen and (max-width: 1080px) {
+  .projects .projects__items .project__item__container .project__item-right .project__price span {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+}
+.projects .projects__items .project__item__container:nth-child(even) {
+  padding-right: inherit;
+  padding-left: 15px;
+}
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container:nth-child(even) {
+    padding: inherit;
+  }
+}
+.projects .projects__items .project__item__container:nth-child(even):nth-child(even) > .project__item-left {
+  order: 1;
+}
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container:nth-child(even):nth-child(even) > .project__item-left {
+    order: inherit;
+  }
+}
+.projects .projects__items .project__item__container:nth-child(even):nth-child(even) > .project__item-right {
+  padding-left: 45px;
+  padding-right: inherit;
+}
+@media screen and (max-width: 1250px) {
+  .projects .projects__items .project__item__container:nth-child(even):nth-child(even) > .project__item-right {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .projects .projects__items .project__item__container:nth-child(even):nth-child(even) > .project__item-right {
+    padding: inherit;
+  }
 }
 .projects .goods__items__body {
   display: grid;
@@ -669,7 +740,7 @@ header .header__button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: -100%;
   height: 100%;
   object-fit: contain;
 }
