@@ -109,6 +109,16 @@ body.lock {
   line-height: 140%;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1100px) {
+  .button__project {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .button__project {
+    font-size: 12px;
+  }
+}
 .button__project::before {
   content: "";
   display: inline-block;
@@ -116,6 +126,14 @@ body.lock {
   width: 16px;
   height: 20px;
   margin-right: 10px;
+}
+@media screen and (max-width: 1050px) {
+  .button__project::before {
+    margin-right: 5px;
+    width: 12px;
+    height: 16px;
+    background-size: cover;
+  }
 }
 .button__project::after {
   position: absolute;
@@ -128,6 +146,17 @@ body.lock {
   right: -40px;
   top: -10px;
 }
+@media screen and (max-width: 1150px) {
+  .button__project::after {
+    right: -55px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .button__project::after {
+    right: -80px;
+    top: -15px;
+  }
+}
 .button__project span {
   position: absolute;
   right: 20px;
@@ -135,7 +164,22 @@ body.lock {
   width: 19px;
   height: 11px;
   background: url("../images/arrow-icon.svg") center center no-repeat;
+  background-size: cover;
   z-index: 2;
+}
+@media screen and (max-width: 1150px) {
+  .button__project span {
+    width: 16px;
+    height: 10px;
+    right: 15px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .button__project span {
+    width: 12px;
+    height: 8px;
+    right: 7px;
+  }
 }
 .button__project:hover > span {
   transition: all 0.3s ease 0s;
@@ -454,6 +498,17 @@ header .header__button {
   margin-bottom: 30px;
   gap: 60px;
   height: 500px;
+  padding-left: inherit;
+}
+@media screen and (max-width: 1250px) {
+  .projects .projects__items .project__item__container {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects .projects__items .project__item__container {
+    gap: 15px;
+  }
 }
 .projects .projects__items .project__item__container .project__item-left {
   max-width: 725px;
@@ -473,6 +528,16 @@ header .header__button {
   padding-bottom: 40px;
   flex: 1 1 auto;
 }
+@media screen and (max-width: 1250px) {
+  .projects .projects__items .project__item__container .project__item-right {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projects .projects__items .project__item__container .project__item-right {
+    padding-right: 0;
+  }
+}
 .projects .projects__items .project__item__container .project__item-right .project__tittle {
   font-weight: 400;
   font-size: 28px;
@@ -483,6 +548,11 @@ header .header__button {
 .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items {
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 1100px) {
+  .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items {
+    gap: 15px;
+  }
 }
 .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item span {
   font-style: normal;
@@ -498,19 +568,39 @@ header .header__button {
   line-height: 122.5%;
   color: #333333;
 }
+@media screen and (max-width: 1100px) {
+  .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item p {
+    font-size: 15px;
+  }
+}
 .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item p::before {
   content: "";
   display: inline-block;
   height: 16px;
   width: 16px;
-  background: url("../images/height-icon.svg");
+  background: url("../images/height-icon.svg") center center no-repeat;
+  background-size: cover;
   margin-right: 8px;
+}
+@media screen and (max-width: 1100px) {
+  .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item p::before {
+    height: 13px;
+    width: 13px;
+    margin-right: 4px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item p::before {
+    display: none;
+  }
 }
 .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item:first-of-type > p::before {
   background: url("../images/width-icon.png");
+  background-size: cover;
 }
 .projects .projects__items .project__item__container .project__item-right .project__sizes .project__sizes__items .project__sizes__item:last-of-type > p::before {
   background: url("../images/lenght-icon.svg");
+  background-size: cover;
 }
 .projects .projects__items .project__item__container .project__item-right .project__rooms {
   padding: 15px 0;

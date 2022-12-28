@@ -115,6 +115,12 @@ body {
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
+  @include max-screen(1100px){
+    font-size: 14px;
+  }
+  @include max-screen(1020px){
+    font-size: 12px;
+  }
   &::before {
     content: "";
     display: inline-block;
@@ -122,6 +128,14 @@ body {
     width: 16px;
     height: 20px ;
     margin-right: 10px;
+    @include max-screen(1050px){
+      margin-right: 5px;
+      width: 12px;
+      height: 16px;
+      background-size: cover;
+
+    }
+
   }
   &::after{
     position: absolute;
@@ -133,6 +147,13 @@ body {
     background: #2E7A36;
     right: -40px;
     top: -10px;
+    @include max-screen(1150px){
+      right: -55px;
+    }
+    @include max-screen(1050px){
+      right: -80px;
+      top: -15px
+    }
   }
   span {
     position: absolute;
@@ -141,7 +162,18 @@ body {
     width: 19px;
     height: 11px;
     background: url("../images/arrow-icon.svg") center center no-repeat;
+    background-size: cover;
     z-index: 2;
+    @include max-screen(1150px){
+      width: 16px;
+      height: 10px;
+      right: 15px;
+    }
+    @include max-screen(1050px){
+      width: 12px;
+      height: 8px;
+      right: 7px;
+    }
 
   }
   &:hover>span{
@@ -486,6 +518,13 @@ header {
       margin-bottom: 30px;
       gap: 60px;
       height: 500px;
+      padding-left: inherit;
+      @include max-screen(1250px){
+        gap: 30px;
+      }
+      @include max-screen(1000px){
+        gap: 15px;
+      }
 
       .project__item-left {
         max-width: 725px;
@@ -506,6 +545,12 @@ header {
         padding-top: 40px;
         padding-bottom: 40px;
         flex: 1 1 auto;
+        @include max-screen(1250px){
+          padding-right: 15px;
+        }
+        @include max-screen(1000px){
+          padding-right: 0;
+        }
 
         .project__tittle {
           font-weight: 400;
@@ -519,6 +564,9 @@ header {
           .project__sizes__items {
             display: flex;
             gap: 30px;
+            @include max-screen(1100px){
+              gap: 15px;
+            }
 
             .project__sizes__item {
               span {
@@ -535,23 +583,37 @@ header {
                 font-size: 18px;
                 line-height: 122.5%;
                 color: #333333;
+                @include max-screen(1100px){
+                  font-size: 15px;
+                }
 
                 &::before {
                   content: "";
                   display: inline-block;
                   height: 16px;
                   width: 16px;
-                  background: url("../images/height-icon.svg");
+                  background: url("../images/height-icon.svg") center center no-repeat;
+                  background-size: cover;
                   margin-right: 8px;
+                  @include max-screen(1100px) {
+                    height: 13px;
+                    width: 13px;
+                    margin-right: 4px;
+                  }
+                  @include max-screen(1022px){
+                    display: none;
+                  }
                 }
               }
 
               &:first-of-type > p::before {
                 background: url("../images/width-icon.png");
+                background-size: cover;
               }
 
               &:last-of-type > p::before {
                 background: url("../images/lenght-icon.svg");
+                background-size: cover;
               }
             }
           }
@@ -612,7 +674,6 @@ header {
             padding-left: 24px;
           }
         }
-
 
       }
 
