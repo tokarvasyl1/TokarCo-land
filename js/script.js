@@ -52,7 +52,11 @@ function documentActions(e) {
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
+    boolean:true,
     responsiveClass:true,
+    animateOut: 'slideOutDown',
+    animateIn: 'flipInX',
+    smartSpeed:450,
     responsive:{
         0:{
             items:1,
@@ -65,7 +69,6 @@ $('.owl-carousel').owlCarousel({
         1000:{
             items:1,
             nav:false,
-            loop:false
         }
     }
 })

@@ -228,7 +228,6 @@ body {
 }
 
 
-
 header {
   position: fixed;
   width: 100%;
@@ -515,9 +514,11 @@ header {
         max-width: 725px;
         height: 100%;
         overflow: hidden;
-        div{
+
+        div {
           height: 100%;
         }
+
         @include max-screen(991.98px) {
           max-width: 100%;
           height: 350px;
@@ -1336,7 +1337,6 @@ footer {
     }
   }
 }
-
 
 
 
