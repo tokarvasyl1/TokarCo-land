@@ -869,6 +869,18 @@ header .header__button {
 
 .design {
   padding: 200px 0 200px 0;
+  background: url("../images/design-bg.png") right -400px no-repeat;
+  background-size: 800px;
+}
+@media screen and (max-width: 1000px) {
+  .design {
+    background-size: 700px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .design {
+    background-size: 500px;
+  }
 }
 .design .design__bg {
   position: relative;
@@ -884,22 +896,25 @@ header .header__button {
   position: relative;
 }
 .design .design__container .design__left {
-  position: absolute;
-  left: 0;
-  top: -70px;
+  flex: 1;
   border: 1px solid black;
+  position: relative;
 }
-.design .design__container .design__left h2 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 122.5%;
-  color: #333333;
+.design .design__container .design__left img {
+  display: block;
+  max-width: 80%;
 }
 .design .design__container .design__right {
-  max-width: 711px;
+  flex: 1;
+  border: 1px solid black;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
 }
-.design .design__container .design__right P {
+.design .design__container .design__right p {
+  width: 100%;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -907,8 +922,233 @@ header .header__button {
   color: #333333;
   margin-bottom: 40px;
 }
+.design .design__container .design__right p span {
+  color: #369740;
+}
 .design .design__container .design__right a {
   width: 70%;
+}
+
+.technologies .technologies__container {
+  border: 1px solid black;
+}
+.technologies .technologies__title h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122.5%;
+  color: #333333;
+  margin-bottom: 45px;
+}
+.technologies .technologies__items-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(461px, 1fr));
+  gap: 40px;
+  align-items: flex-start;
+}
+@media screen and (max-width: 500px) {
+  .technologies .technologies__items-body {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.technologies .technologies__items-body .technologies__item {
+  padding: 40px 0 0 40px;
+  background: #FFFFFF;
+  box-shadow: 0 3px 24px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item {
+    padding: 20px 20px 20px 20px;
+  }
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left {
+  flex: 1;
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-left {
+    order: 2;
+  }
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-title h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18.2914px;
+  line-height: 122.5%;
+  color: #333333;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-title h3 {
+    text-align: center;
+  }
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-title h3 span {
+  color: #369740;
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul {
+  position: relative;
+  max-width: 250px;
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991.98px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul {
+    max-width: 350px;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul {
+    max-width: 320px;
+    margin: auto;
+  }
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.7071px;
+  line-height: 122.5%;
+  color: #333333;
+  margin-bottom: 15px;
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:last-child {
+  margin-bottom: 0;
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:before {
+  position: absolute;
+  content: "1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #369740;
+  left: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  color: #FFFFFF;
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(2):before {
+  content: "2";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(3):before {
+  content: "3";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(4):before {
+  content: "4";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(5):before {
+  content: "5";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(6):before {
+  content: "6";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(7):before {
+  content: "7";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-left .technologies__item-list ul li:nth-child(8):before {
+  content: "8";
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-right {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-right::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 382px;
+  height: 382px;
+  border-radius: 50%;
+  background: rgba(225, 240, 227, 0.6);
+  bottom: -150px;
+  right: -120px;
+}
+@media screen and (max-width: 1200px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-right::after {
+    width: 280px;
+    height: 280px;
+    bottom: -80px;
+  }
+}
+@media screen and (max-width: 991.98px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-right::after {
+    width: 382px;
+    height: 382px;
+    bottom: -45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .technologies .technologies__items-body .technologies__item .technologies__item-right::after {
+    display: none;
+  }
+}
+.technologies .technologies__items-body .technologies__item .technologies__item-right img {
+  display: block;
+  width: 100%;
+  z-index: 2;
+}
+.technologies .technologies__items-body .technologies__item:nth-child(2) .technologies__item-right::after {
+  bottom: 50px;
+  right: -120px;
+}
+.technologies .technologies__items-body .technologies__item:nth-child(3) .technologies__item-right::after {
+  top: 70px;
+  right: -150px;
+}
+.technologies .technologies__items-body .technologies__item:nth-child(4) .technologies__item-right::after {
+  bottom: 0;
+  right: -150px;
+}
+.technologies .tech1 {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .technologies .tech1 {
+    flex-direction: column;
+  }
+}
+.technologies .tech2 {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .technologies .tech2 {
+    flex-direction: column;
+  }
+}
+.technologies .tech3 {
+  position: relative;
+  top: -195px;
+  display: flex;
+}
+@media screen and (max-width: 991.98px) {
+  .technologies .tech3 {
+    top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .technologies .tech3 {
+    flex-direction: column;
+  }
+}
+.technologies .tech4 {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .technologies .tech4 {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
