@@ -1,5 +1,6 @@
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "jquery.fancybox.min.css";
 body {
   font-family: "Montserrat", serif;
 }
@@ -1186,6 +1187,7 @@ footer .footer__container {
 }
 footer .footer__main .footer__logo img {
   width: 250px;
+  margin-bottom: 20px;
 }
 footer .footer__main .footer__info p {
   font-style: normal;

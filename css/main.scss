@@ -1,5 +1,6 @@
 @import "reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "jquery.fancybox.min.css";
 
 @mixin max-screen($res) {
   @media screen and (max-width: $res) {
@@ -1209,6 +1210,7 @@ footer {
     .footer__logo {
       img {
         width: 250px;
+        margin-bottom:20px;
 
       }
     }
