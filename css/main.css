@@ -1337,6 +1337,11 @@ footer .footer__subscribe form {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 540px) {
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    top: calc(50% - 15px);
+  }
+}
 .owl-carousel .owl-nav button.owl-next:after, .owl-carousel .owl-nav button.owl-prev:after {
   content: "\f054";
   font-weight: 900;
@@ -1344,9 +1349,20 @@ footer .footer__subscribe form {
   color: white;
   font-size: 20px;
 }
+@media screen and (max-width: 540px) {
+  .owl-carousel .owl-nav button.owl-next:after, .owl-carousel .owl-nav button.owl-prev:after {
+    font-size: 16px;
+  }
+}
 .owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
   transform: scale(1.2);
   transition: all 0.3s ease 0s;
+}
+@media screen and (max-width: 540px) {
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .owl-carousel .owl-nav button.owl-prev {

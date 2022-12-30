@@ -1373,16 +1373,26 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  @include max-screen(540px){
+    top: calc(50% - 15px);
+  }
   &:after{
     content: "\f054";
     font-weight: 900;
     font-family: "Font Awesome 6 Free", serif;
     color: white;
     font-size: 20px;
+    @include max-screen(540px){
+      font-size: 16px;
+    }
   }
   &:hover{
     transform: scale(1.2);
     transition: all 0.3s ease 0s;
+  }
+  @include max-screen(540px){
+    width: 30px;
+    height: 30px;
   }
 }
 
