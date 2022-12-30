@@ -222,10 +222,7 @@ body {
   }
 }
 
-.button:hover {
-  background-color: rgba(113, 64, 235, 0.7);
-  transition: background-color 0.3s ease 0s;
-}
+
 
 
 header {
@@ -261,7 +258,7 @@ header {
       max-width: 250px;
     }
     @include max-screen(767.98px) {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     img {
