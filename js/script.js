@@ -52,23 +52,21 @@ function documentActions(e) {
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
+    nav:true,
     boolean:true,
     responsiveClass:true,
-    animateOut: 'slideOutDown',
-    animateIn: 'flipInX',
-    smartSpeed:450,
     responsive:{
         0:{
             items:1,
-            nav:false
+            nav:true
         },
         600:{
             items:1,
-            nav:false
+            nav:true
         },
         1000:{
             items:1,
-            nav:false,
+            nav:true,
         }
     }
 })

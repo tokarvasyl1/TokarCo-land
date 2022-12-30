@@ -3,6 +3,7 @@
 @import "jquery.fancybox.min.css";
 body {
   font-family: "Montserrat", serif;
+  background: #FFFFFF;
 }
 body.lock {
   overflow-y: hidden;
@@ -519,6 +520,7 @@ header .header__button {
   max-width: 725px;
   height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .projects .projects__items .project__item__container .project__item-left div {
   height: 100%;
@@ -1296,6 +1298,62 @@ footer .footer__subscribe form {
   .footer__rights p {
     font-size: 12px;
   }
+}
+
+.owl-carousel .owl-nav {
+  top: 0;
+  height: 100px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  color: red;
+  font-size: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  top: 0;
+  left: 0;
+  color: red;
+  font-size: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+  display: none;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 10px;
+  border-radius: 50%;
+  background-color: rgba(46, 122, 54, 0.7);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-carousel .owl-nav button.owl-next:after, .owl-carousel .owl-nav button.owl-prev:after {
+  content: "\f054";
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free", serif;
+  color: white;
+  font-size: 20px;
+}
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease 0s;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 10px;
+}
+.owl-carousel .owl-nav button.owl-prev:after {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=main.css.map */
