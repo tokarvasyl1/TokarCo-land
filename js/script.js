@@ -51,7 +51,6 @@ function documentActions(e) {
 
 $('.owl-carousel').owlCarousel({
     nav:true,
-    loop:true,
     items:1,
     margin:10,
     dots:false,
