@@ -485,275 +485,282 @@ header {
 
   }
 
-  .projects__items {
-    .project__item__container {
-      display: flex;
-      height: 500px;
-      justify-content: space-between;
-      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
-      margin-bottom: 15px;
-      gap: 60px;
-      padding-left: inherit;
-      @include max-screen(1250px) {
-        gap: 30px;
-      }
-      @include max-screen(1000px) {
-        gap: 15px;
-      }
-      @include max-screen(991.98px) {
-        flex-direction: column;
-        padding-right: 0;
-        height: inherit;
-
-      }
-
-      .project__item-left {
-        max-width: 725px;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-
-        div {
-          height: 100%;
-        }
-
-        @include max-screen(991.98px) {
-          max-width: 100%;
-          height: 350px;
-        }
-        @include max-screen(600px) {
-          height: inherit;
-        }
-
-        img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .project__item-right {
-        padding-right: 45px;
+  .projects__items__container {
+    .project_filter_item {
+      .project-item {
         display: flex;
-        flex-direction: column;
-        padding-top: 40px;
-        padding-bottom: 40px;
-        flex: 1 1 auto;
+        height: 500px;
+        gap: 60px;
+        padding-right: 15px;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
         @include max-screen(1250px) {
-          padding-right: 15px;
+          gap: 30px;
         }
         @include max-screen(1000px) {
-          padding-right: 0;
+          gap: 15px;
         }
         @include max-screen(991.98px) {
-          width: 65%;
-          margin: auto;
-          padding: 0 15px 15px 15px;
-        }
-        @include max-screen(767.98px) {
-          width: 80%;
-        }
-        @include max-screen(540px) {
-          width: 100%;
+          flex-direction: column;
+          padding-right: 0;
+          height: inherit;
+
         }
 
-        .project__tittle {
-          font-weight: 400;
-          font-size: 28px;
-          line-height: 122.5%;
-          color: #333333;
-          margin-bottom: 30px;
+        .left-side {
+          max-width: 725px;
+          height: 100%;
+          position: relative;
+          div {
+            height: 100%;
+          }
+
+          @include max-screen(991.98px) {
+            max-width: 100%;
+            height: 350px;
+          }
+          @include max-screen(600px) {
+            height: inherit;
+          }
+
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
 
-        .project__sizes {
-          .project__sizes__items {
-            display: flex;
-            gap: 30px;
-            @include max-screen(1100px) {
-              gap: 15px;
-            }
-            @include max-screen(991.98px) {
+        .right-side {
+          padding-right: 45px;
+          display: flex;
+          flex-direction: column;
+          padding-top: 40px;
+          padding-bottom: 40px;
+          flex: 1 1 auto;
+          @include max-screen(1250px) {
+            padding-right: 15px;
+          }
+          @include max-screen(1000px) {
+            padding-right: 0;
+          }
+          @include max-screen(991.98px) {
+            width: 65%;
+            margin: auto;
+            padding: 0 15px 15px 15px;
+          }
+          @include max-screen(767.98px) {
+            width: 80%;
+          }
+          @include max-screen(540px) {
+            width: 100%;
+          }
+
+          .project__tittle {
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 122.5%;
+            color: #333333;
+            margin-bottom: 30px;
+          }
+
+          .project__sizes {
+            .project__sizes__items {
+              display: flex;
               gap: 30px;
-            }
-
-            .project__sizes__item {
-              span {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 122.5%;
-                color: rgba(51, 51, 51, 0.4);
+              @include max-screen(1100px) {
+                gap: 15px;
+              }
+              @include max-screen(991.98px) {
+                gap: 30px;
               }
 
-              p {
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 122.5%;
-                color: #333333;
-                @include max-screen(1100px) {
-                  font-size: 15px;
-                }
-                @include max-screen(991.98px) {
-                  font-size: 18px
-                }
-                @include max-screen(370px) {
-                  font-size: 14px
+              .project__sizes__item {
+                span {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 122.5%;
+                  color: rgba(51, 51, 51, 0.4);
                 }
 
-                &::before {
-                  content: "";
-                  display: inline-block;
-                  height: 16px;
-                  width: 16px;
-                  background: url("../images/height-icon.svg") center center no-repeat;
-                  background-size: cover;
-                  margin-right: 8px;
+                p {
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 18px;
+                  line-height: 122.5%;
+                  color: #333333;
                   @include max-screen(1100px) {
-                    height: 13px;
-                    width: 13px;
-                    margin-right: 4px;
-                  }
-                  @include max-screen(1022px) {
-                    display: none;
+                    font-size: 15px;
                   }
                   @include max-screen(991.98px) {
+                    font-size: 18px
+                  }
+                  @include max-screen(370px) {
+                    font-size: 14px
+                  }
+
+                  &::before {
+                    content: "";
                     display: inline-block;
-                    margin-right: 8px;
                     height: 16px;
                     width: 16px;
+                    background: url("../images/height-icon.svg") center center no-repeat;
+                    background-size: cover;
+                    margin-right: 8px;
+                    @include max-screen(1100px) {
+                      height: 13px;
+                      width: 13px;
+                      margin-right: 4px;
+                    }
+                    @include max-screen(1022px) {
+                      display: none;
+                    }
+                    @include max-screen(991.98px) {
+                      display: inline-block;
+                      margin-right: 8px;
+                      height: 16px;
+                      width: 16px;
+                    }
                   }
                 }
-              }
 
-              &:first-of-type > p::before {
-                background: url("../images/width-icon.png");
-                background-size: cover;
-              }
+                &:first-of-type > p::before {
+                  background: url("../images/width-icon.png");
+                  background-size: cover;
+                }
 
-              &:last-of-type > p::before {
-                background: url("../images/lenght-icon.svg");
-                background-size: cover;
+                &:last-of-type > p::before {
+                  background: url("../images/lenght-icon.svg");
+                  background-size: cover;
+                }
               }
             }
           }
-        }
 
-        .project__rooms {
-          padding: 15px 0;
-          display: flex;
-          flex: 1 1 auto;
-          justify-content: center;
-          flex-direction: column;
-          row-gap: 4px;
+          .project__rooms {
+            padding: 15px 0;
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 4px;
 
-          p {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 122.5%;
-            color: rgba(51, 51, 51, 0.4);
-            @include max-screen(991.98px) {
-              font-size: 20px;
+            p {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 122.5%;
+              color: rgba(51, 51, 51, 0.4);
+              @include max-screen(991.98px) {
+                font-size: 20px;
+              }
+            }
+
+            span {
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 122.5%;
+              color: #333333;
+              margin-left: 30px;
+              @include max-screen(991.98px) {
+                font-size: 18px;
+              }
             }
           }
 
-          span {
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 122.5%;
-            color: #333333;
-            margin-left: 30px;
-            @include max-screen(991.98px) {
-              font-size: 18px;
-            }
-          }
-        }
+          .project__price {
+            margin-bottom: 30px;
 
-        .project__price {
-          margin-bottom: 30px;
-
-          p {
-            position: relative;
-            display: inline-block;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 140%;
-            color: #333333;
-            padding-right: 24px;
-            @include max-screen(1080px) {
-              font-size: 20px;
-              padding-right: 10px;
-            }
-            @include max-screen(991.98px) {
-              font-size: 24px;
-              padding-right: 24px;
-            }
-
-            &::after {
-              position: absolute;
-              content: "";
+            p {
+              position: relative;
               display: inline-block;
-              width: 2px;
-              height: 40px;
-              background: url("../images/filter-vector.svg");
-              right: 0;
-              top: -4px;
-
-            }
-          }
-
-          span {
-            font-style: normal;
-            font-weight: 500;
-            font-size: 24px;
-            line-height: 140%;
-            color: #333333;
-            padding-left: 24px;
-            @include max-screen(1080px) {
-              font-size: 20px;
-              padding-left: 10px;
-            }
-            @include max-screen(991.98px) {
+              font-style: normal;
+              font-weight: 500;
               font-size: 24px;
-              padding-left: 24px;
+              line-height: 140%;
+              color: #333333;
+              padding-right: 24px;
+              @include max-screen(1080px) {
+                font-size: 20px;
+                padding-right: 10px;
+              }
+              @include max-screen(991.98px) {
+                font-size: 24px;
+                padding-right: 24px;
+              }
+
+              &::after {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 2px;
+                height: 40px;
+                background: url("../images/filter-vector.svg");
+                right: 0;
+                top: -4px;
+
+              }
             }
+
+            span {
+              font-style: normal;
+              font-weight: 500;
+              font-size: 24px;
+              line-height: 140%;
+              color: #333333;
+              padding-left: 24px;
+              @include max-screen(1080px) {
+                font-size: 20px;
+                padding-left: 10px;
+              }
+              @include max-screen(991.98px) {
+                font-size: 24px;
+                padding-left: 24px;
+              }
+            }
+          }
+
+        }
+      }
+
+      &:nth-child(even) {
+        .project-item {
+          padding-right: 0;
+          padding-left: 15px;
+          @include max-screen(991.98px){
+            padding-left: 0;
+          }
+          .right-side {
+            padding-left: 45px;
+            padding-right: 0;
+            order: 1;
+            @include max-screen(1250px){
+              padding-left: 15px;
+            }
+            @include max-screen(1000px){
+              padding-left: 0;
+            }
+            @include max-screen(991.98px){
+              order: 2;
+            }
+          }
+          .left-side{
+            order: 2;
+            @include max-screen(991.98px){
+              order: 1;
+            }
+
+
           }
         }
       }
-    }
-
-    .project__item__container:nth-child(even) {
-      padding-right: 0;
-      padding-left: 15px;
-      @include max-screen(991.98px) {
-        padding: inherit;
-      }
-
-      &:nth-child(even) > .project__item-left {
-        order: 1;
-        @include max-screen(991.98px) {
-          order: inherit;
-        }
-      }
-
-      &:nth-child(even) > .project__item-right {
-        padding-left: 45px;
-        padding-right: inherit;
-        @include max-screen(1250px) {
-          padding-left: 15px;
-        }
-        @include max-screen(991.98px) {
-          padding: 0 15px 15px 15px;
-        }
-      }
-
     }
   }
 }
+
 
 .video__section {
   height: 630px;
@@ -873,24 +880,6 @@ header {
         display: block;
         max-width: 80%;
       }
-
-      //img{
-      //  position: absolute;
-      //  display: block;
-      //  width: 100%;
-      //  top: 0;
-      //  left: 0;
-      //}
-      //h2{
-      //  position: absolute;
-      //  font-style: normal;
-      //  font-weight: 600;
-      //  font-size: 36px;
-      //  line-height: 122.5%;
-      //  color: #333333;
-      //  top: -128px;
-      //  left: 50px;
-      //}
     }
 
     .design__right {
@@ -1337,33 +1326,22 @@ footer {
   }
 }
 
-.owl-carousel .owl-nav{
 
-  top: 0;
-  height: 100px;
-  border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
-}
-.owl-carousel .owl-nav button.owl-prev span{
-  color: red;
-  font-size: 30px;
-}
 
-.owl-carousel .owl-nav button.owl-prev span{
-  top: 0;
-  left: 0;
-  color: red;
-  font-size: 30px;
-}
 
-.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span{
-  display: none;
+.owl-theme .owl-nav [class*=owl-]:hover{
+  background: inherit;
 }
-
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+.owl-theme .owl-nav {
+  margin-top: inherit;
+  //width: 100%;
+  //border: 1px solid black;
+  //position: absolute;
+  //top: 0;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   width: 50px;
-  height:50px;
+  height: 50px;
   position: absolute;
   top: calc(50% - 25px);
   right: 10px;
@@ -1373,35 +1351,52 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  @include max-screen(540px){
+  @include max-screen(540px) {
     top: calc(50% - 15px);
   }
-  &:after{
+
+  &:after {
     content: "\f054";
     font-weight: 900;
     font-family: "Font Awesome 6 Free", serif;
     color: white;
     font-size: 20px;
-    @include max-screen(540px){
+    @include max-screen(540px) {
       font-size: 16px;
     }
   }
-  &:hover{
+
+  &:hover {
     transform: scale(1.2);
     transition: all 0.3s ease 0s;
+    background-color: rgba(46, 122, 54, 0.7);
   }
-  @include max-screen(540px){
+
+  @include max-screen(540px) {
     width: 30px;
     height: 30px;
   }
 }
 
-.owl-carousel .owl-nav button.owl-prev{
+.owl-carousel .owl-nav button.owl-prev {
   left: 10px;
-  &:after{
+
+  &:after {
     transform: rotate(180deg);
   }
 }
+
+.owl-carousel .owl-nav span{
+  display: none;
+}
+
+
+
+
+
+
+
+
 
 
 

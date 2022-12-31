@@ -32,9 +32,10 @@ function documentActions(e) {
     }
 
     //works filter
-    if (targetElement.classList.contains('goods__item__type') && !targetElement.classList.contains('active')){
-        const activeElement = document.querySelector(`.goods__item__type.active`);
-        const elements = document.querySelectorAll(`.goods__items-item`);
+
+    if (targetElement.classList.contains('item-type') && !targetElement.classList.contains('active')){
+        const activeElement = document.querySelector(`.item-type.active`);
+        const elements = document.querySelectorAll(`.project_filter_item`);
         const elementType = targetElement.dataset.workType;
 
         activeElement.classList.remove('active');
@@ -45,31 +46,20 @@ function documentActions(e) {
                 element.hidden = false : element.hidden = true;
         })
     }
+
 }
 
-
-
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
     nav:true,
-    boolean:true,
+    loop:true,
+    items:1,
+    margin:10,
+    dots:false,
     responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:1,
-            nav:true
-        },
-        1000:{
-            items:1,
-            nav:true,
-        }
-    }
+
 })
+
+
 
 
 
