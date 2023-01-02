@@ -752,7 +752,7 @@ header .header__button {
     padding-left: 24px;
   }
 }
-.projects .projects__items__container .project_filter_item .project-item .right-side > a {
+.projects .projects__items__container .project_filter_item .project-item .right-side > button {
   z-index: 2;
 }
 .projects .projects__items__container .project_filter_item:nth-child(even) .project-item {
