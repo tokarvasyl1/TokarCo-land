@@ -490,7 +490,7 @@ header {
     .project_filter_item {
       .project-item {
         display: flex;
-        height: 500px;
+        height: 450px;
         gap: 60px;
         padding-right: 15px;
         justify-content: space-between;
@@ -532,6 +532,10 @@ header {
             height: 100%;
             object-fit: cover;
           }
+          .o5, .o6{
+            object-fit: inherit;
+          }
+
         }
 
         .right-side {
@@ -541,6 +545,7 @@ header {
           padding-top: 40px;
           padding-bottom: 40px;
           flex: 1 1 auto;
+          justify-content: center;
           @include max-screen(1250px) {
             padding-right: 15px;
           }
@@ -642,22 +647,34 @@ header {
           }
 
           .project__rooms {
+            max-width: 250px;
+            width: 100%;
             padding: 15px 0;
             display: flex;
-            flex: 1 1 auto;
-            justify-content: center;
             flex-direction: column;
-            row-gap: 4px;
 
-            p {
+
+
+            .room__item{
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 5px;
+            }
+
+            .room__tittle {
+              width: 50%;
               font-style: normal;
               font-weight: 400;
               font-size: 16px;
-              line-height: 122.5%;
+
               color: rgba(51, 51, 51, 0.4);
               @include max-screen(991.98px) {
                 font-size: 20px;
               }
+            }
+            .room__square{
+              width: 50%;
             }
 
             span {
@@ -1401,7 +1418,7 @@ footer {
 }
 
 
-.popup__bg {
+.popup__bg-o1, .popup__bg-o3, .popup__bg-o5, .popup__bg-o6, .popup__bg-o7, .popup__bg-o8, .popup__bg-o9, .popup__bg-o10 {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -1410,15 +1427,13 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
+
   backdrop-filter: blur(3px);
-  //transform: scale(0);
+
   &.opened {
     visibility: visible;
     transition: 0.1s;
-    //transform: scale(1);
+
   }
 
   .popup__bg-image {
@@ -1493,7 +1508,7 @@ footer {
 
         font-style: normal;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 22px;
         color: #333333;
         margin-bottom: 3px;
       }
