@@ -1407,7 +1407,7 @@ footer .footer__subscribe form {
 @media screen and (max-width: 991.98px) {
   .popup__bg .popup__content {
     width: 80%;
-    height: 60%;
+    height: 80%;
   }
 }
 .popup__bg .popup__content .close__popup {
