@@ -408,7 +408,7 @@ header .header__button {
 
 .main {
   min-height: 100vh;
-  background: url("../images/main_bg.jpg") center center;
+  background: url("../images/main_bg.webp") center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -807,7 +807,7 @@ header .header__button {
 
 .video__section {
   height: 630px;
-  background: url("../images/about-bg.jpg") center center no-repeat;
+  background: url("../images/about-bg.webp") center center no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
