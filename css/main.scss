@@ -11,7 +11,8 @@
 body {
   font-family: "Montserrat", serif;
   background: #FFFFFF;
-  height: 100%;
+  overflow-y: hidden;
+
   &.lock{
     overflow-y: hidden;
   }
