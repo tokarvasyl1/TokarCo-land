@@ -33,7 +33,7 @@ function documentActions(e) {
 
     //works filter
 
-    if (targetElement.classList.contains('item-type') && !targetElement.classList.contains('active')){
+    if (targetElement.classList.contains('item-type') && !targetElement.classList.contains('active')) {
         const activeElement = document.querySelector(`.item-type.active`);
         const elements = document.querySelectorAll(`.project_filter_item`);
         const elementType = targetElement.dataset.workType;
@@ -50,11 +50,11 @@ function documentActions(e) {
 }
 
 $('.owl-carousel').owlCarousel({
-    nav:true,
-    items:1,
-    margin:10,
-    dots:false,
-    responsiveClass:true,
+    nav: true,
+    items: 1,
+    margin: 10,
+    dots: false,
+    responsiveClass: true,
 
 })
 
@@ -147,12 +147,11 @@ $(function () {
 });
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-
+    $(function () {
         $('.menu__link').click(function () {
             $('.menu__body, .burger__menu').removeClass('opened')
-            $('body').removeClass('lock')
         });
-
+    });
 
 }
 
