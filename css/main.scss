@@ -14,6 +14,7 @@ body {
 
   &.lock {
     overflow-y: hidden;
+    position: relative;
   }
 }
 
@@ -724,7 +725,7 @@ header {
             }
           }
 
-          &>a{
+          & > a {
             z-index: 2;
           }
 
@@ -1396,24 +1397,25 @@ footer {
 
 .owl-carousel .owl-nav span {
   display: none;
+
 }
 
 
 .popup__bg {
-    visibility: hidden;
+  visibility: hidden;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
   backdrop-filter: blur(3px);
   //transform: scale(0);
-  &.opened{
+  &.opened {
     visibility: visible;
     transition: 0.1s;
     //transform: scale(1);
@@ -1438,7 +1440,7 @@ footer {
     background: #EDF6EE;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     border-radius: 5px;
-    @include max-screen(991.98px){
+    @include max-screen(991.98px) {
       width: 80%;
       height: 80%;
     }
@@ -1469,20 +1471,22 @@ footer {
       align-items: center;
       height: 100%;
 
-      form{
+      form {
         display: flex;
         margin: auto;
         width: 70%;
         flex-wrap: wrap;
         justify-content: space-between;
-        @include max-screen(991.98px){
-          width: 90%  ;
+        @include max-screen(991.98px) {
+          width: 90%;
         }
-        .form_div{
+
+        .form_div {
           display: flex;
         }
       }
-      h2{
+
+      h2 {
         flex-basis: 100%;
         display: flex;
         justify-content: center;
@@ -1493,13 +1497,15 @@ footer {
         color: #333333;
         margin-bottom: 3px;
       }
-      p{
+
+      p {
         flex-basis: 100%;
         text-align: center;
         margin-bottom: 25px;
         font-size: 12px;
       }
-      span{
+
+      span {
         display: block;
         flex-basis: 70%;
         margin: auto auto 4px;
@@ -1507,7 +1513,7 @@ footer {
         font-weight: 400;
         font-size: 14px;
         color: #333333;
-        @include max-screen(991.98px){
+        @include max-screen(991.98px) {
           flex-basis: 90%;
         }
       }
@@ -1524,11 +1530,11 @@ footer {
         margin: auto auto 15px;
         padding: 0 20px 0 20px;
         border-radius: 3px;
-        @include max-screen(991.98px){
+        @include max-screen(991.98px) {
           flex-basis: 90%;
         }
 
-        &::placeholder{
+        &::placeholder {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -1537,7 +1543,8 @@ footer {
         }
 
       }
-      button{
+
+      button {
 
         padding: 10px;
 
@@ -1549,30 +1556,33 @@ footer {
         font-size: 18px;
         color: #FFFFFF;
         margin: auto;
-        @include max-screen(991.98px){
+        @include max-screen(991.98px) {
           flex-basis: 90%;
         }
-        span{
+
+        span {
           padding-left: 0;
           display: block;
           margin: auto;
-          &:first-of-type{
+
+          &:first-of-type {
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             color: #FFFFFF;
           }
-          &:last-of-type{
+
+          &:last-of-type {
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
 
 
-
             color: #333333;
           }
         }
-        &:hover{
+
+        &:hover {
           opacity: 0.8;
         }
       }

@@ -7,6 +7,7 @@ body {
 }
 body.lock {
   overflow-y: hidden;
+  position: relative;
 }
 
 .wrapper {
@@ -1377,11 +1378,8 @@ footer .footer__subscribe form {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   backdrop-filter: blur(3px);
 }
 .popup__bg.opened {
