@@ -1130,7 +1130,7 @@ header .header__button {
 }
 .technologies .tech3 {
   position: relative;
-  top: -195px;
+  top: -164px;
   display: flex;
 }
 @media screen and (max-width: 991.98px) {
