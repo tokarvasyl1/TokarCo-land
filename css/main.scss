@@ -12,18 +12,23 @@ body {
   font-family: "Montserrat", serif;
   background: #FFFFFF;
 
-  &.lock {
-    overflow-y: hidden;
-    position: relative;
-  }
+
 }
 
 .wrapper {
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  z-index: 100;
+  &.lock{
+    overflow-y: hidden;
+  }
+
 }
+
+
 
 [class*="__container"] {
   max-width: 1310px;
