@@ -58,6 +58,17 @@ $('.owl-carousel').owlCarousel({
 
 })
 
+$(function () {
+    $('.button__project').click(function () {
+        $('.popup__bg').addClass('opened')
+        $('body').addClass('lock')
+    });
+    $('.close__popup').click(function () {
+        $('.popup__bg').removeClass('opened')
+        $('body').removeClass('lock')
+    });
+});
+
 
 
 
