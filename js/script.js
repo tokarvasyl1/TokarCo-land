@@ -147,14 +147,12 @@ $(function () {
 });
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-    $(function () {
+
         $('.menu__link').click(function () {
             $('.menu__body, .burger__menu').removeClass('opened')
             $('body').removeClass('lock')
-
-
         });
 
-    });
+
 }
 
