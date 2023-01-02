@@ -370,6 +370,7 @@ header .burger__menu {
 }
 header .menu__body.opened {
   left: 0;
+  overflow-y: hidden;
 }
 header .burger__menu span,
 header .burger__menu::before,

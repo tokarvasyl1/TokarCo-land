@@ -354,6 +354,7 @@ header {
 
   .menu__body.opened {
     left: 0;
+    overflow-y: hidden;
   }
 
 
