@@ -1,9 +1,9 @@
-// $(function (){
-//     $('.burger__menu').click(function () {
-//         $('.menu__body,.burger__menu').toggleClass('opened')
-//         $('body').toggleClass('lock')
-//     });
-// });
+$(function (){
+    $('.burger__menu').click(function () {
+        $('.menu__body,.burger__menu').toggleClass('opened')
+        $('body').addClass('lock')
+    });
+});
 
 
 
@@ -158,9 +158,3 @@ $(function () {
 //
 // }
 
-
-$(function () {
-    $('.burger__menu').click(function () {
-        $('.wrapper').toggleClass('lock')
-    });
-});
