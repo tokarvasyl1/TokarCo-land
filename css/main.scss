@@ -263,6 +263,7 @@ header {
     }
 
     img {
+      height: 100%;
       width: 100%;
       display: block;
       @include max-screen(500px) {
