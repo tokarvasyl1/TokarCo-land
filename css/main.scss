@@ -1439,6 +1439,10 @@ footer {
     background: #EDF6EE;
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     border-radius: 5px;
+    @include max-screen(991.98px){
+      width: 80%;
+      height: 60%;
+    }
 
 
     .close__popup {
